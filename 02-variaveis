@@ -1,0 +1,10 @@
+<script>
+        var canal="Matheus - Javascript";
+        var ano=2023;
+        var num=10;
+
+        var texto=canal+(ano+num);
+
+        document.write(texto);
+
+    </script>
