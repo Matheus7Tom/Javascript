@@ -1,0 +1,7 @@
+ <script>
+        var apelido1="netflixo";
+        var apelido2="cinderelo";
+        const separador=" - ";
+
+        alert(apelido1 + separador + apelido2);
+    </script>
