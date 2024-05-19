@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB Cursos - JavaScript</title>
+    <script>
+         
+       var dt=new Date();
+
+       var ndt=new Date();//ano,mes,dia,hora,minutos,segundos,milesimos.
+
+       var diasem=ndt.getDay();
+       var dia=ndt.getDate();
+       var mes=ndt.getMonth();
+       var ano=ndt.getFullYear();
+
+       var hora=ndt.getHours();
+       var minutos=ndt.getMinutes();
+       var segundos=ndt.getSeconds();
+
+       var meses=new Array("janeiro","feveiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro");
+       var semanas=new Array("domingo","segunda","terça","quarta","quinta","sexta","sabado");
+
+       document.write(semanas[diasem] + " , " +  dia  + " de " + meses[mes] + " de " + ano + "</br>"  );
+       document.write(hora + ":" + minutos + ":" + segundos + "<br/>"  );
+    </script>
+</head>
+<body>
+    <h2>voce esta manipulando hora e data com as funçoes </h2>
+    
+</body>
+</html>
