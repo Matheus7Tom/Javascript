@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CFB Cursos - Javascript</title>
+    <style>
+        #dv1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #f000;
+            background-color: #f00;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+    <script>
+        var px = 0;
+        var py = 0;
+
+
+        document.addEventListener("keydown", function(event){
+            var obj=document.getElementById("dv1");
+            var tecla=event.KeyCode;
+            //37=esquerda - 38=cima - 39=direita - 40=baixo
+            if (tecla == 37){
+                px -= 10;
+                obj.style.left = px + "px";
+            } else if (tecla == 38) {
+                py -= 10;
+                obj.style.top = py + "px";
+            } else if (tecla == 39) {
+                px += 10;
+                obj.style.left = px + "px";
+            } else if (tecla == 40) {
+                py += 10;
+                obj.style.top = py + "px";
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="dv1"></div>
+</body>
+
+</html>
